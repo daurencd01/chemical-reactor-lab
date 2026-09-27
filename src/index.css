@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Rubik', 'Segoe UI', sans-serif;
+  --font-display: 'Exo 2', 'Rubik', 'Segoe UI', sans-serif;
+
+  --color-lab-bg: #eef4ff;
+  --color-lab-panel: #ffffff;
+  --color-lab-border: #e2e8f5;
+  --color-cyan: #2563eb;
+  --color-neon-green: #10b981;
+  --color-neon-orange: #f97316;
+  --color-neon-red: #ef4444;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse 1200px 800px at 15% -10%, #dbeafe 0%, transparent 55%),
+    radial-gradient(ellipse 1000px 700px at 100% 10%, #ede9fe 0%, transparent 55%),
+    radial-gradient(ellipse 900px 700px at 50% 120%, #fff7ed 0%, transparent 55%), #f6f9ff;
+  color: #1e293b;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid #e7edf7;
+  box-shadow: 0 1px 2px rgba(30, 41, 59, 0.04), 0 16px 40px -12px rgba(30, 64, 175, 0.16);
+}
+
+.text-glow-cyan {
+  color: #1d4ed8;
+}
+
+.text-glow-green {
+  color: #059669;
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(37, 99, 235, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.05) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
