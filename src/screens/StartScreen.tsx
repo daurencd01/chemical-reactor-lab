@@ -23,7 +23,9 @@ export default function StartScreen({ onStart, onRules, onResults, hasProgress }
         >
           <div className="flex items-center gap-2 text-blue-600 mb-3">
             <FlaskConical size={20} />
-            <span className="text-xs font-display tracking-[0.3em] uppercase">Educational Lab Simulator</span>
+            <span className="text-xs font-display tracking-[0.2em] uppercase">
+              Канат Зерде <span className="text-blue-300 mx-1">·</span> 1-тапсырма
+            </span>
           </div>
           <h1 className="font-display text-4xl md:text-5xl font-black text-blue-900 text-glow-cyan leading-tight">
             CHEMICAL
